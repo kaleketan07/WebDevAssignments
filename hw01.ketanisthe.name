@@ -1,0 +1,14 @@
+server{
+	listen 80;
+	listen [::]:80;
+	
+	root /home/jarvis/www/hw01.ketanisthe.name;
+
+	index index.html;
+	
+	server_name hw01.ketanisthe.name;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
