@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Task 2</title>	
+	</head>
+	<body>
+		<h1 id = "label1" > 10 </h1>
+		
+		<p><button type = "button" onclick = "window.alert('This is an alert')">Press for alert!</button></p>
+		<button type = "button" onclick ="incrementNumber()">increment</button>
+		<script>
+			function incrementNumber(){
+				document.getElementById('label1').innerHTML ++;
+			}		
+		</script>
+		<p><button type = "button" onclick ="copylabel()">Copy</button></p>
+		<script>
+			function copylabel(){
+				var elem = document.createElement('p');
+				var elem2 = document.getElementById('label1');
+				document.body.append(elem);
+				elem.append(elem2.innerHTML)
+			}		
+		</script>
+		
+	</body>
+</html
