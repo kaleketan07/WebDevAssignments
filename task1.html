@@ -1,12 +1,17 @@
-<Html>
+<!DOCTYPE html>
+
+<html>
 	<head>
+		<meta charset = "UTF-8">
 		<style>
 			#color1 {color : red}
 			#color2 {color : green}
 			#color3 {color : blue}
 			#color4 {color : orange}	
 			table { width  : 100px;
-				border : 1px solid gray}
+				border : 1px solid gray;
+				border-collapse : collapse;
+				padding : 8px}
 			th, td { border : 1px solid gray}	
 		</style>
 		<title>Task 1 (About Lion)</title>
@@ -15,7 +20,7 @@
 		<p><a  href="https://www.w3schools.com/html/default.asp">Learn HTML tutorial</a></p>
 		<p><a  href="https://www.w3schools.com/css/default.asp">Learn CSS tutorial</a></p>
 		<p><a  href="https://en.wikipedia.org/wiki/Lion">About Lion</a></p>
-		<img src = "lion.jpg">
+		<img src = "lion.jpg" alt = "Lion Image">
 		<!--Image source : https://en.wikipedia.org/wiki/Lion#/media/File:Lion_(Panthera_leo)_(30941994012).jpg -->
 		<h1>
 			<span id = "color1">L</span>
@@ -24,7 +29,7 @@
 			<span id = "color4">N</span>
 
 		</h1>
-		<table cellpadding = '8'>
+		<table>
 			<tr>
 				<th>x</th>
 				<th>2^x</th>

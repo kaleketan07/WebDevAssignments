@@ -1,11 +1,14 @@
+<!DOCTYPE html>
+
 <html>
 	<head>
+		<meta charset = "UTF-8">
 		<title>Task 2</title>	
 	</head>
 	<body>
 		<h1 id = "label1" > 10 </h1>
 		
-		<p><button type = "button" onclick = "window.alert('This is an alert')">Press for alert!</button></p>
+		<p><button type = "button" onclick = "window.alert('The current number is: ' + document.getElementById('label1').innerHTML)">Press for alert!</button></p>
 		<button type = "button" onclick ="incrementNumber()">increment</button>
 		<script>
 			function incrementNumber(){
@@ -23,4 +26,4 @@
 		</script>
 		
 	</body>
-</html
+</html>
